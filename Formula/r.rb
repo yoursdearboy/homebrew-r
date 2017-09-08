@@ -5,10 +5,8 @@ class R < Formula
   sha256 "02b1135d15ea969a3582caeb95594a05e830a6debcdb5b85ed2d5836a6a3fc78"
   revision 2
 
-  bottle do
-    sha256 "9e142bd997897eae4cf785a2ffc712557237c10f191369f338b1b23f02c78954" => :sierra
-    sha256 "8b2cd74e219afb9477a4459aa7096190e0d19ac7f8ff02410026febcc897d749" => :el_capitan
-    sha256 "123be38bdb449655f0b66043af5c1b756f752004117b0cc31385b667600f4f38" => :yosemite
+  def pour_bottle?
+    false
   end
 
   depends_on "pkg-config" => :build
